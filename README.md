@@ -1,13 +1,13 @@
 # Live feed with gstreamer and GNU-Radio
 Live feed with usb-webcam, gstreamer-1.0 and GNU Radio using GMSK
 
-Here is what you need for simulation :
-`
-1.Linux based machine with GNURadio,
-2.gstreamer-1.0,
-3.
-`
-This can also be used any SDR with slide modifications.
+- Here is what you need for simulation :
+```bash
+1. Linux based machine with GNURadio,
+2. gstreamer-1.0,
+3. v4l2-util
+```
+- This can also be used any SDR with slide modifications.
 
 ## Step 1: Create a pipeline using mkfifo
 ```bash
