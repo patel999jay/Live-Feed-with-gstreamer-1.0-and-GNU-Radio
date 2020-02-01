@@ -1,4 +1,4 @@
-# Live-feed-with-gstreamer-and-GNU-Radio-
+# Live feed with gstreamer and GNU-Radio
 Live feed with usb-webcam, gstreamer-1.0 and GNU Radio using GMSK
 
 Here is what you need for simulation :
@@ -65,7 +65,25 @@ gst-launch-1.0 -e autovideosrc ! video/x-raw,width=640,height=360,framerate=30/1
 ----------------------------------------
 ```
 
-## Step 3: Provide that stream to GNU Radio. You can use below Flow Graph.
+## Step 3: Provide that stream to GNU Radio. You can use below Flow Graph(GMSK_SIM.GRC).
 
+ <img src="Images/GMSK_SIM.png">
 
+- Run the gmsk_sim.grc, you can see this python GUI for Rx,
 
+ <img src="Images/GMSK_RX.png">
+ 
+ You have to change file source and sink path according to you. You can see your video on your desktop.
+ 
+ ## Optional : You can also use GMSK_TRX file with little modification for ADALM Pluto.
+ 
+  <img src="Images/GMSK_TRX.png">
+ 
+Enjoy RFing !
+
+## References
+1. https://github.com/LamaBleu/Pluto-DATV-test
+2. http://wiki.oz9aec.net/index.php/Simple_DVB_with_Gstreamer_and_GNU_Radio
+3. https://github.com/csete/gnuradio-dvb
+4. http://oz9aec.net/radios/gnu-radio/simple-dvb-with-gstreamer-and-gnu-radio
+5. http://wiki.oz9aec.net/index.php/Gstreamer_cheat_sheet
